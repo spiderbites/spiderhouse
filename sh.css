@@ -1,0 +1,37 @@
+body {
+  font-family: Muli,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.8em;
+  background-color:pink;
+}
+
+#slideshow {
+  position:relative;
+  margin: 0 auto;
+  height:480px;
+  width:480px;
+  border-radius: 20px;
+  border: solid 30px;
+  background-color: black;
+}
+
+#slideshow img {
+  top:0;
+  left:0;
+  position: absolute;
+  z-index:8;
+  opacity:0.0;
+  width:480px;
+  height:480px;
+  border-radius: 20px;
+}
+
+#slideshow img.active {
+  z-index: 10;
+  opacity:1.0;
+}
+
+#slideshow img.last-active {
+  z-index: 9;
+}
